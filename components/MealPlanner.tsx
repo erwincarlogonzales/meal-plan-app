@@ -210,11 +210,16 @@ const MealPlanner = () => {
                 </SelectContent>
               </Select>
               <Input
+                // value={newMeal}
+                // onChange={(e) => setNewMeal(e.target.value)}
+                // placeholder="Enter a meal name"
+                // onKeyPress={(e) => e.key === 'Enter' && addMeal()}
+                // className="flex-1"
+                type="text"
                 value={newMeal}
                 onChange={(e) => setNewMeal(e.target.value)}
                 placeholder="Enter a meal name"
-                onKeyPress={(e) => e.key === 'Enter' && addMeal()}
-                className="flex-1"
+                style={{ textAlign: 'left', direction: 'ltr' }}
               />
               <Button onClick={addMeal} className="flex items-center gap-2">
                 <PlusCircle className="w-4 h-4" />

@@ -221,6 +221,7 @@ const MealPlanner = () => {
                 value={newMeal}
                 onChange={(e) => setNewMeal(e.target.value)}
                 placeholder="Enter a meal name"
+                onKeyPress={(e) => e.key === 'Enter' && addMeal()}
                 className="flex-1 h-12 sm:h-10" // trying to fix mobile responsiveness
                 style={{ textAlign: 'left', direction: 'ltr' }}
               />

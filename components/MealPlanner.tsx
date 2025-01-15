@@ -184,7 +184,7 @@ const MealPlanner = () => {
             <Utensils className="w-6 h-6" />
             Meal Planner
           </CardTitle>
-          <p className="text-sm text-gray-500">Input at least 7 meals for both lunch and dinner to Generate Schedule then Download Schedule.</p>
+          <p className="text-sm text-gray-500">Input at least 7 meals for lunch and at least 7 meals dinner to Generate Schedule then Download Schedule.</p>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">

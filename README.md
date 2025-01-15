@@ -29,7 +29,7 @@ Check out the live app here:
 ---
 
 ## Project Structure 🗂️  
-
+```python
 /meal-plan-app
 ├── app/                     # Next.js app directory
 │   ├── globals.css          # Global styles
@@ -55,6 +55,7 @@ Check out the live app here:
 ├── README.md                # Project documentation
 ├── tailwind.config.js       # Tailwind CSS configuration
 └── tsconfig.json            # TypeScript configuration
+```
 
 ## Why Should You Care 🤝
 1. Honestly, you shouldn't.

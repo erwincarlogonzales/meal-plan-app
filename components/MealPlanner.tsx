@@ -215,7 +215,6 @@ const MealPlanner = () => {
                 placeholder="Enter a meal name"
                 onKeyPress={(e) => e.key === 'Enter' && addMeal()}
                 className="flex-1"
-                style={{ transform: 'scaleX(-1)' }} 
               />
               <Button onClick={addMeal} className="flex items-center gap-2">
                 <PlusCircle className="w-4 h-4" />

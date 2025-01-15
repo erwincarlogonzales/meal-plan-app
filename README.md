@@ -6,15 +6,17 @@ Let's be real—meal planning can feel like a **never-ending chore**. Every day,
 - *What should I cook?* 🍳  
 - *What meals work for the week?* 🗓️  
 - *What groceries do I need?* 🛒  
+- *What are we having today?* 🍔
 
-I was done with the stress and mental gymnastics, so I built the **Meal Plan App** to simplify the whole process. With this app, I can easily:  
+I was done with the stress and mental gymnastics, so I built this **Meal Plan App** to simplify the whole process. With this app, I can easily:  
 - Plan meals in advance ✅  
 - Keep track of ingredients 🥕🍗  
 - Save time and energy on grocery shopping ⏳  
+- Download, print, and paste it in my wall for reference 📋
 
-The **best part**? I deployed this app on **Vercel** because it's free, and yes, I'm broke—but that won't stop me from creating awesome tools to solve real problems! 🚀💪  
+The **best part**? I deployed this app on **Vercel** because it's free, and yes, I'm cost "efficient" but that won't stop me from building tools to solve real problems. 🚀💪  
 
-### Try it out! 🌐  
+### Check it out bro! 🌐  
 Check out the live app here:  
 👉 [Meal Plan App on Vercel](https://carlo-meal-plan.vercel.app/)  
 
@@ -65,7 +67,8 @@ Check out the live app here:
 4. Deliver clean, reusable, and scalable code.
 5. Use the latest AI tools (ChatGPT4o, o1, and Claude 3.5 Sonnet, Oppus)
 
-I'm passionate about solving everyday problems with code.
+ISSUES ⛔
+1. Text is mirrored (backwards) after user input on android. desktop, and IOS are working fine. (I can't figure out how to fix it.)
 
 ---
 

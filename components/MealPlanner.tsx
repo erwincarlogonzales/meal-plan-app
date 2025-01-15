@@ -177,7 +177,8 @@ const MealPlanner = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-6">
+    // <div className="max-w-4xl mx-auto p-6 space-y-6">
+    <div className="max-w-full sm:max-w-4xl mx-auto p-6 space-y-6"> {/* trying to fix mobile responsiveness */}
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
@@ -189,7 +190,8 @@ const MealPlanner = () => {
         <CardContent>
           <div className="space-y-4">
             {/* Meal Input */}
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2"> */} {/* trying to fix mobile responsiveness */}
+            <div className="flex flex-wrap gap-2">
               <Select value={mealType} onValueChange={setMealType}>
                 <SelectTrigger className="w-32">
                   <SelectValue placeholder="Meal Type" />
@@ -219,6 +221,7 @@ const MealPlanner = () => {
                 value={newMeal}
                 onChange={(e) => setNewMeal(e.target.value)}
                 placeholder="Enter a meal name"
+                className="flex-1 h-12 sm:h-10" // trying to fix mobile responsiveness
                 style={{ textAlign: 'left', direction: 'ltr' }}
               />
               <Button onClick={addMeal} className="flex items-center gap-2">

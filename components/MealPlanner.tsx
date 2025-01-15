@@ -305,7 +305,8 @@ const MealPlanner = () => {
               </div>
               <Button
                 onClick={generateSchedule}
-                className="ml-auto flex items-center gap-2"
+                // className="ml-auto flex items-center gap-2"
+                className="ml-auto flex items-center gap-2 sm:py-2 sm:px-3" // trying to fix mobile responsiveness
                 disabled={meals.lunch.length < 7 || meals.dinner.length < 7}
               >
                 <Calendar className="w-4 h-4" />

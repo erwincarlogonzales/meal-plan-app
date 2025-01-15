@@ -7,35 +7,6 @@ import { Input } from '@/components/ui/input';
 import { PlusCircle, Trash2, Calendar, Utensils, Sun, Moon, Download } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
-// Responsive Generate Section Component
-const GenerateSection = ({ weeks, setWeeks, generateSchedule, disabled }) => {
-  return (
-    <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-      <div className="flex items-center gap-2 w-full sm:w-auto">
-        <span className="text-sm sm:text-base">Weeks:</span>
-        {[1, 2, 3, 4].map((num) => (
-          <Button
-            key={num}
-            variant={weeks === num ? "default" : "outline"}
-            onClick={() => setWeeks(num)}
-            className="w-8 h-8 sm:w-10 sm:h-10 text-sm sm:text-base"
-          >
-            {num}
-          </Button>
-        ))}
-      </div>
-      <Button
-        onClick={generateSchedule}
-        className="w-full sm:w-auto sm:ml-auto flex items-center justify-center gap-2"
-        disabled={disabled}
-      >
-        <Calendar className="w-4 h-4" />
-        Generate Schedule
-      </Button>
-    </div>
-  );
-};
-
 const MealPlanner = () => {
   const [meals, setMeals] = useState({ lunch: [], dinner: [] });
   const [newMeal, setNewMeal] = useState('');
@@ -206,7 +177,8 @@ const MealPlanner = () => {
   };
 
   return (
-    <div className="max-w-full sm:max-w-4xl mx-auto p-6 space-y-6">
+    // <div className="max-w-4xl mx-auto p-6 space-y-6">
+    <div className="max-w-full sm:max-w-4xl mx-auto p-6 space-y-6"> {/* trying to fix mobile responsiveness */}
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
@@ -218,6 +190,7 @@ const MealPlanner = () => {
         <CardContent>
           <div className="space-y-4">
             {/* Meal Input */}
+            {/* <div className="flex gap-2"> */} {/* trying to fix mobile responsiveness */}
             <div className="flex flex-wrap gap-2">
               <Select value={mealType} onValueChange={setMealType}>
                 <SelectTrigger className="w-32">
@@ -239,12 +212,17 @@ const MealPlanner = () => {
                 </SelectContent>
               </Select>
               <Input
+                // value={newMeal}
+                // onChange={(e) => setNewMeal(e.target.value)}
+                // placeholder="Enter a meal name"
+                // onKeyPress={(e) => e.key === 'Enter' && addMeal()}
+                // className="flex-1"
                 type="text"
                 value={newMeal}
                 onChange={(e) => setNewMeal(e.target.value)}
                 placeholder="Enter a meal name"
                 onKeyPress={(e) => e.key === 'Enter' && addMeal()}
-                className="flex-1 h-12 sm:h-10"
+                className="flex-1 h-12 sm:h-10" // trying to fix mobile responsiveness
                 style={{ textAlign: 'left', direction: 'ltr' }}
               />
               <Button onClick={addMeal} className="flex items-center gap-2">
@@ -311,12 +289,29 @@ const MealPlanner = () => {
             </div>
 
             {/* Week Selection and Generate Button */}
-            <GenerateSection 
-              weeks={weeks}
-              setWeeks={setWeeks}
-              generateSchedule={generateSchedule}
-              disabled={meals.lunch.length < 7 || meals.dinner.length < 7}
-            />
+            <div className="flex gap-4 items-center">
+              <div className="flex items-center gap-2">
+                <span>Weeks:</span>
+                {[1, 2, 3, 4].map((num) => (
+                  <Button
+                    key={num}
+                    variant={weeks === num ? "default" : "outline"}
+                    onClick={() => setWeeks(num)}
+                    className="w-10 h-10"
+                  >
+                    {num}
+                  </Button>
+                ))}
+              </div>
+              <Button
+                onClick={generateSchedule}
+                className="ml-auto flex items-center gap-2"
+                disabled={meals.lunch.length < 7 || meals.dinner.length < 7}
+              >
+                <Calendar className="w-4 h-4" />
+                Generate Schedule
+              </Button>
+            </div>
           </div>
         </CardContent>
       </Card>
@@ -369,3 +364,4 @@ const MealPlanner = () => {
 };
 
 export default MealPlanner;
+

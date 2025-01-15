@@ -67,9 +67,6 @@ Check out the live app here:
 4. Deliver clean, reusable, and scalable code.
 5. Use the latest AI tools (ChatGPT4o, o1, and Claude 3.5 Sonnet, Oppus)
 
-ISSUES ⛔
-1. Text is mirrored (backwards) after user input on android. desktop, and IOS are working fine. (I can't figure out how to fix it.)
-
 ---
 
 ## License 📜  

@@ -10,7 +10,7 @@ Let's be real—meal planning can feel like a **never-ending chore**. Every day,
 I was done with the stress and mental gymnastics, so I built the **Meal Plan App** to simplify the whole process. With this app, I can easily:  
 - Plan meals in advance ✅  
 - Keep track of ingredients 🥕🍗  
-- Save time and effort on grocery shopping ⏳  
+- Save time and energy on grocery shopping ⏳  
 
 The **best part**? I deployed this app on **Vercel** because it's free, and yes, I'm broke—but that won't stop me from creating awesome tools to solve real problems! 🚀💪  
 
@@ -21,6 +21,7 @@ Check out the live app here:
 ---
 
 ## Key Features ✨  
+- **Simple Meal Planning**: Drag-and-drop meals into a weekly schedule.  
 - **Reusable UI Components**: Modular design for quick updates.  
 - **Tailwind CSS Styling**: Clean and modern interface.  
 - **Deployed on Vercel**: Lightning-fast and free hosting.  
@@ -62,7 +63,7 @@ Check out the live app here:
 2. Use **modern web technologies** like Next.js, TypeScript, and Tailwind CSS.
 3. Deploy and manage production-ready apps on **platforms like Vercel**.
 4. Deliver clean, reusable, and scalable code.
-5. Use the latest AI tools (ChatGPT4o, o1, and Claude 3.5 Sonnet, Opus)
+5. Use the latest AI tools (ChatGPT4o, o1, and Claude 3.5 Sonnet, Oppus)
 
 I'm passionate about solving everyday problems with code.
 

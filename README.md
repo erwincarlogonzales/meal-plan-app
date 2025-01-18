@@ -1,8 +1,8 @@
 # Ulam Planner App 🍚
 
-## Bakit Ko 'To Ginawa? (Why I Made This) 🤔
+## Bakit Ko To Ginawa? (Why I Made This) 🤔
 
-Alam nating lahat ang struggle:
+Alam nating lahat ang struggle (because its real!):
 - *"Ano kakainin natin?"* 🤷
 - *"Nakakasawa na ang adobo! Lord kunin mo na ko!"* 🍖
 - *"Wala na akong maisip na ulam! Pota"* 😫
@@ -76,8 +76,7 @@ As someone who needs to plan meals for the family, ang hirap ng daily na nag-iis
 ### 2. Paano Umiiwas sa Pag-ulit? 🔄
 
 - Hindi uulitin ang parehong ulam sa loob ng isang linggo
-- May memory ang app ng recent meals
-- Mas maraming ulam options = mas hindi mauulit!
+- Mas maraming ulam options = mas hindi mauulit! Monggo nanaman? WTF?
 - Pero kung gusto mo ng "pangat" bahala ka na
 
 ## Subukan Mo Na! 🎯
@@ -139,4 +138,4 @@ This app was built to simplify meal planning by addressing common challenges:
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-Made with ❤️ for Pinoy families!
+Made with ❤️

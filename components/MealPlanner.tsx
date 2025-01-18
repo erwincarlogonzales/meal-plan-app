@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { PlusCircle, Trash2, Calendar, Utensils, Sun, Moon, Download } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Utensils, ExternalLink as LinkIcon, Sun, Moon, PlusCircle, Trash2, Calendar, Download } from 'lucide-react';
 
 // Responsive Generate Section Component
 const GenerateSection = ({ weeks, setWeeks, generateSchedule, disabled }) => {
@@ -211,9 +211,20 @@ const MealPlanner = () => {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Utensils className="w-6 h-6" />
-            Meal Planner
+            Ulam Planner
           </CardTitle>
-          <p className="text-sm text-gray-500">Input at least 7 meals for both lunch and dinner to Generate Schedule then Download Schedule.</p>
+          <div className="text-sm text-gray-500 space-y-2">
+            <p>Input at least 7 meals for both lunch and dinner to Generate Schedule then Download Schedule.</p>
+            <a 
+              href="https://tinyl.io/Bxg9" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 hover:underline"
+            >
+              <LinkIcon className="w-3 h-3" />
+              View Instructions
+            </a>
+          </div>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
